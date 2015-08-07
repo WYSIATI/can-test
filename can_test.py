@@ -24,7 +24,6 @@ class Attacks(object):
         # The attack will overwhelm CAN traffic.
         while True:
             self.dev.send(frame)
-            print self.dev.recv()
 
         # Stop the device. Although it might not be necessary.
         self.dev.stop()
